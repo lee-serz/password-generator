@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="adaptive.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<title>Password Generator</title>
+</head>
+<body>
+	<section class="inner">
+		<div class="container">
+			<div class="main">
+				<div class="main-header">
+					<h1 class="header-title">Password Generator</h1>
+				</div>
+				<div class="main-content">
+					<div class="password-parametrs">
+						<p><label for="passlen"> Длина пароля </label> <select id="passlen" name="password-length">
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+						</select> </p>
+						<div class="password-options">
+							<p><input id="upcase" type="checkbox"> 	<label for="upcase"><span>Включать</span> заглавные буквы</label></p>
+							<p><input id="lowcase" type="checkbox"> 	<label for="lowcase"><span>Включать</span> прописные буквы</label></p>
+							<p><input id="digits" type="checkbox"> 	<label for="digits"><span>Включать</span> цифры</label></p>
+							<p><input id="symbols" type="checkbox"> 	<label for="symbols"><span>Включать</span> знаки препинания</label></p>
+						</div>
+					</div>
+					<div class="button"> GENERATE </div>
+				</div>
+				<div class="output"></div>
+			</div>
+		</div>
+	</section>
+	<script src="script.js"></script>
+</body>
+</html>
